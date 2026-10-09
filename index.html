@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aniket Sakhale | Student Portfolio</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#f5f7fb;color:#172033;line-height:1.6}
+nav{position:sticky;top:0;z-index:10;background:#ffffffee;backdrop-filter:blur(10px);border-bottom:1px solid #e5e7eb}
+.nav{max-width:1100px;margin:auto;padding:15px 22px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;font-size:22px}
+.logo span{color:#2563eb}
+nav a{color:#172033;text-decoration:none;margin-left:18px;font-size:14px}
+.hero{min-height:88vh;display:flex;align-items:center;background:linear-gradient(135deg,#eef4ff,#fff)}
+.hero-inner{max-width:1100px;width:100%;margin:auto;padding:70px 22px}
+.badge{display:inline-block;background:#dbeafe;color:#1d4ed8;padding:7px 12px;border-radius:20px;font-size:13px;font-weight:700;margin-bottom:18px}
+h1{font-size:clamp(42px,7vw,72px);line-height:1.05;margin-bottom:18px}
+h1 span{color:#2563eb}
+.hero p{max-width:650px;font-size:18px;color:#526070}
+.buttons{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:12px 19px;border-radius:9px;text-decoration:none;font-weight:700;border:1px solid #2563eb}
+.primary{background:#2563eb;color:white}
+.secondary{color:#2563eb;background:white}
+section{max-width:1100px;margin:auto;padding:75px 22px}
+.title{font-size:34px;margin-bottom:10px}
+.subtitle{color:#667085;margin-bottom:28px}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:25px}
+.card{background:white;border:1px solid #e5e7eb;border-radius:16px;padding:25px;box-shadow:0 8px 25px #00000008}
+.skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.skill{background:#eef2ff;color:#3730a3;padding:8px 12px;border-radius:20px;font-size:14px;font-weight:700}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.project h3{margin-bottom:8px}
+.project p{color:#667085;font-size:14px}
+.project .tag{display:inline-block;margin-top:15px;font-size:12px;color:#2563eb;font-weight:700}
+.timeline{display:grid;gap:14px}
+.item{border-left:3px solid #2563eb;padding-left:18px}
+.item h3{font-size:18px}
+.item p{color:#667085}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.contact a{color:#2563eb;text-decoration:none}
+footer{text-align:center;padding:30px;background:#111827;color:#d1d5db}
+@media(max-width:800px){.about,.contact{grid-template-columns:1fr}.projects{grid-template-columns:1fr}.nav{display:block}.nav-links{margin-top:10px}.nav-links a{margin:0 12px 0 0}.hero{min-height:80vh}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav">
+    <div class="logo">Aniket<span>.</span></div>
+    <div class="nav-links">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
+      <a href="#education">Education</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="badge">STUDENT PORTFOLIO</div>
+    <h1>Hi, I'm <span>Aniket Sakhale</span></h1>
+    <p>College student building practical skills in programming, data structures, artificial intelligence and technology through projects and continuous learning.</p>
+    <div class="buttons">
+      <a class="btn primary" href="#projects">View My Projects</a>
+      <a class="btn secondary" href="#contact">Contact Me</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <h2 class="title">About Me</h2>
+  <p class="subtitle">A simple introduction to my academic and technical journey.</p>
+  <div class="about">
+    <div class="card">
+      <p>I am a college student interested in programming, problem solving, Data Structures, Artificial Intelligence and Machine Learning. I enjoy learning concepts and applying them through academic mini-projects and practical work.</p>
+      <div class="skills">
+        <span class="skill">C++</span><span class="skill">Data Structures</span>
+        <span class="skill">AI & ML</span><span class="skill">Problem Solving</span>
+        <span class="skill">Project Work</span>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Career Goal</h3>
+      <p>To strengthen my programming and technology skills and build useful, practical software projects.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="title">Technical Skills</h2>
+  <p class="subtitle">Technologies and concepts I am learning and practicing.</p>
+  <div class="projects">
+    <div class="card"><h3>C / C++</h3><p>Programming fundamentals, functions, arrays and object-oriented concepts.</p></div>
+    <div class="card"><h3>Data Structures</h3><p>Binary Search Trees, traversal, searching and fundamental algorithms.</p></div>
+    <div class="card"><h3>Artificial Intelligence</h3><p>AI fundamentals, uncertainty, probabilistic reasoning and knowledge representation.</p></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="title">Projects</h2>
+  <p class="subtitle">Selected academic and practical projects.</p>
+  <div class="projects">
+    <div class="card project">
+      <h3>Binary Search Tree</h3>
+      <p>C++ implementation of BST insertion and inorder traversal. Example output: 20 30 40 50 60 70 80.</p>
+      <span class="tag">C++ • Data Structures</span>
+    </div>
+    <div class="card project">
+      <h3>Student Course Selection System</h3>
+      <p>A mini-project using set operations to represent and process student course selections.</p>
+      <span class="tag">Set Operations • Mini Project</span>
+    </div>
+    <div class="card project">
+      <h3>Automatic Door Opening System</h3>
+      <p>An academic embedded-system concept for automatically opening a door using sensor-based detection.</p>
+      <span class="tag">Embedded Systems • Automation</span>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <h2 class="title">Education</h2>
+  <p class="subtitle">My academic background.</p>
+  <div class="timeline">
+    <div class="card item">
+      <h3>College Student</h3>
+      <p>Engineering / technology studies with focus on programming, data structures and AI-related subjects.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="title">Contact</h2>
+  <p class="subtitle">Add your real contact details before publishing.</p>
+  <div class="contact">
+    <div class="card"><h3>Email</h3><p><a href="mailto:your-email@example.com">your-email@example.com</a></p></div>
+    <div class="card"><h3>LinkedIn / GitHub</h3><p>Add your profile links here.</p></div>
+  </div>
+</section>
+
+<footer>© 2026 Aniket Sakhale • Student Portfolio</footer>
+</body>
+</html>
